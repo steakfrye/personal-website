@@ -1,15 +1,16 @@
 import 'bootstrap';
 import React, { Component } from 'react';
 import './App.css';
-//import Footer from 'Footer.js';
-//import Header from 'Header.js';
-//import Nav from 'Nav.js';
+import Footer from './Footer';
+import Header from './Header';
+import Nav from './Nav';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="index">
+        <Nav />
         <header className="App-header">
           <h1 className="App-title">Dylan Frye</h1>
         </header>
