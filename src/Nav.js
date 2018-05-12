@@ -1,4 +1,4 @@
-import 'bootstrap';
+//import 'bootstrap';
 import React, { Component } from 'react';
 import './App.css';
 
