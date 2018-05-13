@@ -10,13 +10,14 @@ html {
 }
 
 .error-header {
-  flex-wrap: flex;
+  word-wrap: break-word;
   padding: -10px;
   font-size: 8rem;
   text-align: left;
+  margin: 1rem;
 }
 
 .error-message {
   font-size: 2rem;
-  text-align: right;
+  text-align: left;
 }
