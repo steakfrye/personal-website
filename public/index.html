@@ -6,9 +6,30 @@
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>dylan frye</title>
+
+    <title>dylan-frye</title>
+    <script>
+    if (!window.customElements || !document.head.attachShadow) {
+      document.body.classList.add('no-doodle-support');
+    }
+    </script>
   </head>
   <body>
+    <css-doodle>
+      :doodle {
+        @grid: 11 / 100vmax;
+      }
+      --n: calc(
+          @abs(@abs(@row() - 6)
+        + @abs(@col() - 6) - 11) / 11
+      );
+      margin: -10%;
+      transform: rotate(45deg);
+      border: 1px solid hsla(
+        calc(var(--n) * 280 + 120), 90%, 80%,
+        var(--n)
+      );
+    </css-doodle>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>

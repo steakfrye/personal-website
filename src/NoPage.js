@@ -5,7 +5,7 @@ class NoPage extends Component {
     return (
       <div>
         <h1 className="error-header">Oops.</h1>
-        <p className="error-message">You caught me unprepared. This page will be back soon. </p>
+        <p className="error-message">You caught me unprepared. This page will be back soon.</p>
       </div>
     );
   }
