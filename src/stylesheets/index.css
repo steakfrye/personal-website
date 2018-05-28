@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background: linear-gradient(300deg, black, #232b2b);
   margin: 0;
   overflow: hidden;
 }
@@ -12,8 +12,7 @@ html {
   height: 100%;
 }
 
-.error-header {
-  position: absolute;
+h1 {
   word-wrap: break-word;
   padding: -10px;
   font-size: 8rem;
@@ -22,13 +21,125 @@ html {
   margin: 1rem;
 }
 
-.error-message {
-  position: absolute;
+p {
+  position: relative;
   font-size: 2rem;
   text-align: left;
-  top: 20rem;
+  top: 5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #666564;
+}
+
+li {
+    float: left;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li.dropdown-content {
+  text-align: center;
+}
+
+li:hover {
+  background-color: black;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+#wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -100;
+}
+
+.foreground {
+  position: relative;
+  z-index: 100;
+}
+
+.bio {
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+#drop-btn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #666564;
+  width: inherit;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.error-header {
+
+}
+
+.error-message {
+
+}
+
+.img-circle {
+  border-radius: 50%;
+  height: 200px;
+  width: auto;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
 }
 
 .index {
 
+}
+
+.nav {
+  top: 0;
+  display: inline-block;
+}
+
+.link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.link:hover .dropdown:hover #drop-btn {
+    background-color: #111;
 }

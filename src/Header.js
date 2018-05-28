@@ -5,10 +5,17 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li><Link to='/Resume'>Resume</Link></li>
-          <li><Link to='/About'>About</Link></li>
-          <li><Link to='/Contact'>Contact</Link></li>
+        <ul className='nav'>
+          <li><Link className='link' to='/'>home</Link></li>
+          <li><Link className='link' to='/About'>about</Link></li>
+          <li className='dropdown'>
+            <Link className='link' id='drop-btn' to={'javascript:void(0)'}>contact</Link>
+            <div className='dropdown-content'>
+              <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
+              <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
+              <li><a href='#Resume' className='link'>resume</a></li>
+            </div>
+          </li>
         </ul>
       </div>
     );
