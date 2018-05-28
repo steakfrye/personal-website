@@ -17,18 +17,23 @@
   <body>
     <css-doodle>
       :doodle {
-        @grid: 11 / 100vmax;
+        @grid: 7 / 100vmax;
       }
+
+      will-change: transform;
+      transition: .4s @rand(.6s);
+      transform: rotate(@rand(360deg));
+      @shape: triangle;
+      @size: 1em;
+
       --n: calc(
-          @abs(@abs(@row() - 6)
-        + @abs(@col() - 6) - 11) / 11
+          @abs(@abs(@row() - 5)
+        + @abs(@col() - 5) - 9) / 9
       );
-      margin: -10%;
-      transform: rotate(45deg);
-      border: 1px solid hsla(
-        calc(var(--n) * 280 + 120), 90%, 80%,
-        var(--n)
-      );
+
+      @random {
+        background: @pick(#fbf9fb, #e3e1e3, #666564, #343239, #f03d33);
+      }
     </css-doodle>
     <noscript>
       You need to enable JavaScript to run this app.
