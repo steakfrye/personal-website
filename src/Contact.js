@@ -5,8 +5,9 @@ class Contact extends Component {
     return (
         <div>
           <ul className='contact'>
-            <li>dfryed@gmail.com</li>
-            <li>github.com/steakfrye</li>
+            <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
+            <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
+            <li><a href='./files/resume.pdf' className='link'>resume</a></li>
           </ul>
         </div>
     );

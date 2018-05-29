@@ -14,7 +14,6 @@ html {
 
 h1 {
   word-wrap: break-word;
-  padding: -10px;
   font-size: 8rem;
   text-align: left;
   top: 10rem;
@@ -59,8 +58,12 @@ li:last-child {
 
 #wrapper {
   position: relative;
-  width: auto;
-  height: auto;
+}
+
+.about::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .background {
@@ -77,7 +80,6 @@ li:last-child {
 
 .bio {
   font-size: 1.5rem;
-  width: 50%;
 }
 
 #drop-btn {
@@ -118,8 +120,8 @@ li:last-child {
   border-radius: 50%;
   height: 200px;
   width: auto;
-  position: absolute;
-  right: 10px;
+  float: right;
+  clear: right;
   padding: 10px;
 }
 

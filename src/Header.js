@@ -9,11 +9,11 @@ class Header extends Component {
           <li><Link className='link' to='/'>home</Link></li>
           <li><Link className='link' to='/About'>about</Link></li>
           <li className='dropdown'>
-            <Link className='link' id='drop-btn' to={'javascript:void(0)'}>contact</Link>
+            <Link className='link' id='drop-btn' to='/Contact'>contact</Link>
             <div className='dropdown-content'>
               <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
               <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
-              <li><a href='#Resume' className='link'>resume</a></li>
+              <li><a href='./files/resume.pdf' className='link'>resume</a></li>
             </div>
           </li>
         </ul>
