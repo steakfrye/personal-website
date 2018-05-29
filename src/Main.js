@@ -8,7 +8,7 @@ class Main extends Component {
           <p>
           Crafting things is my passion. I love challenges
           and those impossible-at-first-glance problems. Give me critiques and feedback
-          so I can build as best as I can.
+          so I can build the best I can.
           </p>
         </div>
     );

@@ -13,7 +13,7 @@ class Header extends Component {
             <div className='dropdown-content'>
               <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
               <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
-              <li><a href='./files/resume.pdf' className='link'>resume</a></li>
+              <li><a href={require('./files/Resume.pdf')} className='link'>resume</a></li>
             </div>
           </li>
         </ul>
