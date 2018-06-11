@@ -18,6 +18,7 @@ class App extends Component {
           <Route path='/About' component={About}/>
           <Route path='/Contact' component={Contact}/>
           <Route path='/Portfolio' component={Portfolio}/>
+          <Route path='/NoPage' component={NoPage}/>
         </Switch>
       </div>
     );
