@@ -14,43 +14,8 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>dylan-frye</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.2.3/css-doodle.min.js"></script>
-    <script>
-    if (!window.customElements || !document.head.attachShadow) {
-      document.body.classList.add('no-doodle-support');
-    }
-    </script>
   </head>
   <body>
-    <div id='wrapper'>
-      <div class='background'>
-        <css-doodle>
-          :doodle {
-            @grid: 7 / 100vmax;
-          }
-
-          will-change: transform;
-          transition: .4s @rand(.6s);
-          transform:
-            scale(@rand(.9, 3))
-            rotate(@rand(360deg));
-          @shape: triangle;
-          @size: 1em;
-
-          --n: calc(
-              @abs(@abs(@row() - 5)
-            + @abs(@col() - 5) - 9) / 9
-          );
-
-          @random {
-            background: @pick(#fbf9f, #666564, #343239, #f03d33);
-          }
-        </css-doodle>
-      </div>
-      <noscript>
-        You need to enable JavaScript to run this app.
-      </noscript>
-      <div class='foreground' id="root"></div>
-    </div>
+    <div id='root'></div>
   </body>
 </html>
