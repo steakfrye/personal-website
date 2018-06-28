@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   background-color: #CCFFFF;
   background: linear-gradient(35deg, #CCFFFF,#FFCCCC) no-repeat;
+  height: 100%;
 }
 
 h1 {
