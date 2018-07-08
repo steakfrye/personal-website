@@ -5,7 +5,8 @@ class Portfolio extends Component {
     return (
       <div>
         <ul>
-
+          <li><a href='https://www.github.com/steakfrye/speller' className='link'>
+          Spellcheck and Dictionary Loader</a></li>
         </ul>
       </div>
     );

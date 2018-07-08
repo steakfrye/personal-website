@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 import NoPage from './NoPage';
@@ -11,7 +12,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <NoPage /> */}
         <Header />
         <Switch>
           <Route exact path='/' component={Main}/>
@@ -20,6 +20,7 @@ class App extends Component {
           <Route path='/Portfolio' component={Portfolio}/>
           <Route path='/NoPage' component={NoPage}/>
         </Switch>
+        <Footer />
       </div>
     );
   }

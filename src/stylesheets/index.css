@@ -1,16 +1,22 @@
 html {
   font-family: sans-serif;
-  background-color: #CCFFFF;
+  font-weight: 100;
   background: linear-gradient(35deg, #CCFFFF,#FFCCCC) no-repeat;
-  height: 100%;
+  background-color: #CCFFFF;
+  background-size: auto;
 }
 
 h1 {
   word-wrap: break-word;
-  font-size: 8rem;
+  font-size: 7rem;
   text-align: left;
   top: 10rem;
   margin: 1rem;
+  z-index: -1;
+}
+
+h2 {
+  text-align: center;
 }
 
 p {
@@ -93,6 +99,14 @@ li:last-child {
   transition-delay: 0s, 0s, 0.3s;
 }
 
+.footer {
+  font-size: 10px;
+  border-style: solid;
+  border-width: thin;
+  position: fixed;
+  
+}
+
 .img-circle {
   border-radius: 50%;
   height: 200px;
@@ -100,6 +114,10 @@ li:last-child {
   float: right;
   clear: right;
   padding: 10px;
+}
+
+.icon {
+
 }
 
 /* .nav {
@@ -118,3 +136,26 @@ li:last-child {
 /* .link:hover .dropdown:hover #drop-btn {
     background-color: #111;
 } */
+
+/* Thank you 'thetallweeks' for this animation on codepen */
+.no-projects:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 1100ms infinite;
+  animation: ellipsis steps(4,end) 1100ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
