@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Icon from './Icon';
 
 class About extends Component {
   render() {
