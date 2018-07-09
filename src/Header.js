@@ -6,9 +6,9 @@ class Header extends Component {
     return (
       <div>
         <ul className='nav'>
-          <li><Link className='link' to='/'>home</Link></li>
-          <li><Link className='link' to='/About'>about</Link></li>
-          <li><Link className='link' to='/Portfolio'>portfolio</Link></li>
+          <li className='li-nk'><Link className='link' to='/'>home</Link></li>
+          <li className='li-nk'><Link className='link' to='/About'>about</Link></li>
+          <li className='li-nk'><Link className='link' to='/Portfolio'>portfolio</Link></li>
           <li className='dropdown'>
             <Link className='link' id='drop-btn' to='#'>reach out</Link>
             <div className='dropdown-content'>

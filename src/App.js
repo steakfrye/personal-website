@@ -13,13 +13,15 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Switch>
-          <Route exact path='/' component={Main}/>
-          <Route path='/About' component={About}/>
-          <Route path='/Contact' component={Contact}/>
-          <Route path='/Portfolio' component={Portfolio}/>
-          <Route path='/NoPage' component={NoPage}/>
-        </Switch>
+        <div className='container'>
+          <Switch>
+            <Route exact path='/' component={Main}/>
+            <Route path='/About' component={About}/>
+            <Route path='/Contact' component={Contact}/>
+            <Route path='/Portfolio' component={Portfolio}/>
+            <Route path='/NoPage' component={NoPage}/>
+          </Switch>
+        </div>
         <Footer />
       </div>
     );

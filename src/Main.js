@@ -11,12 +11,14 @@ class Main extends Component {
           and those impossible-at-first-glance problems. Give me critiques and feedback
           so I can build your project the best I can.
           </p>
-          <h2>
-            Current Projects
-          </h2>
-          <ul className='projects'>
-            <li className='no-projects'>Nothing at the Moment.</li>
-          </ul>
+          <div className='box'>
+            <h2>
+              Current Projects
+            </h2>
+            <ul className='projects'>
+              <li className='no-projects'>Nothing at the Moment.</li>
+            </ul>
+          </div>
         </div>
     );
   }

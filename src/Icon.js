@@ -4,7 +4,7 @@ class Icon extends Component {
   render() {
     return (
       <div>
-        <svg className="icon" width="200" height="240" xmlns="http://www.w3.org/2000/svg">
+        <svg className="icon" viewBox='0 0 200 240' width="140" height="170" xmlns="http://www.w3.org/2000/svg">
           <rect ry="62" rx="62" id="svg_1" height="194" width="162" y="33" x="13" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
           <rect ry="13" rx="13" fill-opacity="0" id="svg_8" height="35" width="57" y="104" x="28" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
           <rect id="svg_11" ry="13" rx="13" fill-opacity="0" height="35" width="57" y="105.5" x="107.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>

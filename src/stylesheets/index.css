@@ -14,7 +14,7 @@ body {
 
 h1 {
   word-wrap: break-word;
-  font-size: 7rem;
+  font-size: 5rem;
   text-align: left;
   top: 10rem;
   margin: 1rem;
@@ -28,12 +28,12 @@ h2 {
 p {
   margin-left: 5px;
   word-wrap: break-word;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   top: 5rem;
 }
 
-ul {
+.nav {
   list-style-type: none;
   margin: 0px;
   margin-bottom: 50px;
@@ -42,7 +42,7 @@ ul {
   border-width: thin;
 }
 
-li {
+.li-nk {
     float: left;
 }
 
@@ -68,12 +68,10 @@ li:last-child {
   font-size: 1.5rem;
 }
 
-/* #drop-btn {
-  display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-} */
+.box {
+  box-shadow: 0px 5px 5px #ddd;
+  border-radius: 10px;
+}
 
 .dropdown {
   position: relative;
@@ -121,10 +119,11 @@ li:last-child {
 
 }
 
-/* .nav {
-  top: 0;
-  display: inline-block;
-} */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 1em;
+}
 
 .link {
   display: block;
@@ -133,10 +132,6 @@ li:last-child {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-/* .link:hover .dropdown:hover #drop-btn {
-    background-color: #111;
-} */
 
 /* Thank you 'thetallweeks' for this animation on codepen */
 .no-projects:after {
@@ -147,6 +142,10 @@ li:last-child {
   animation: ellipsis steps(4,end) 1100ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
+}
+
+.projects {
+  list-style-type: none;
 }
 
 @keyframes ellipsis {
