@@ -1,6 +1,20 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steakfrye/personal-website.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Dylan Frye",
+    "email": "dfryed@gmail.com",
+    "url": "dylan-frye.me"
+  },
+  "bugs": {
+    "url": "https://github.com/steakfrye/personal-website/issues"
+  },
   "name": "personal-website",
-  "version": "0.1.0",
+  "description": "Dylan Frye's personal portfolio website.",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.0",
