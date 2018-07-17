@@ -10,12 +10,14 @@ class Header extends Component {
           <li className='li-nk'><Link className='link' to='/About'>about</Link></li>
           <li className='li-nk'><Link className='link' to='/Portfolio'>portfolio</Link></li>
           <li className='dropdown'>
-            <Link className='link' id='drop-btn' to='#'>reach out</Link>
-            <div className='dropdown-content'>
-              <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
-              <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
-              <li><a href='https://twitter.com/Pixiestiks' className='link'>Twitter</a></li>
-            </div>
+            <Link className='link' to='#'>reach out</Link>
+            <ul className='nav1'>
+              <div className='dropdown-content'>
+                <li><a href='mailto:dfryed@gmail.com' className='link'>gmail</a></li>
+                <li><a href='https://github.com/steakfrye' className='link'>GitHub</a></li>
+                <li><a href='https://twitter.com/Pixiestiks' className='link'>Twitter</a></li>
+              </div>
+            </ul>
           </li>
         </ul>
       </div>
